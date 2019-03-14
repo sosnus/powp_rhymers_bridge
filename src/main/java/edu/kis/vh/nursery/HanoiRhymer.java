@@ -17,3 +17,4 @@ public class HanoiRhymer extends defaultCountingOutRhymer {
 }
 // ctrl+alt+L - code formatting
 // 3.1.2 //poprawiono formatowanie pozostałych plików przy pomocy skrótu powyżej
+// 3.1.3 alt + <= pozwala przeskakiwać między otartymi kartami plikami (analogicznie to przeskakiwania kart w przeglądarce)

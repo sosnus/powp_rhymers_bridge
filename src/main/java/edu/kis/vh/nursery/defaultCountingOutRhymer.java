@@ -4,6 +4,8 @@ public class defaultCountingOutRhymer {
 
     public int total = -1;
     private int[] NUMBERS = new int[12];
+    private final int stackMaxSize = 11;
+    private final int stackEmpty = -1;
 
     public void countIn(int in) {
         if (!isFull())
@@ -11,22 +13,22 @@ public class defaultCountingOutRhymer {
     }
 
     public boolean callCheck() {
-        return total == -1;
+        return total == stackEmpty;
     }
 
     public boolean isFull() {
-        return total == 11;
+        return total == stackMaxSize;
     }
 
     protected int peekaboo() {
         if (callCheck())
-            return -1;
+            return stackEmpty;
         return NUMBERS[total];
     }
 
     public int countOut() {
         if (callCheck())
-            return -1;
+            return stackEmpty;
         return NUMBERS[total--];
     }
 
